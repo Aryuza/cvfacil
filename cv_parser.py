@@ -2,7 +2,7 @@ import os
 import json
 import google.generativeai as genai
 from typing import Dict, Any, List
-import fitz  # PyMuPDF
+import pypdf
 
 # Configure Gemini API
 # User must ensure GEMINI_API_KEY is set in environment variables
