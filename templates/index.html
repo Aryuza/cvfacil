@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Fácil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="brand-logo">Currículum <span>Fácil</span></h1>
+            <p>Transformá datos crudos en currículums profesionales en segundos.</p>
+        </header>
+
+        <div class="main-card glass-card">
+            <div id="generator-section" class="tab-content active">
+                <div class="input-grid">
+                    <!-- Photo Column -->
+                    <div class="photo-column">
+                        <label class="section-label">Foto de Perfil (Opcional)</label>
+                        <div id="photoDropZone" class="photo-drop-zone">
+                            <input type="file" id="photoInput" accept="image/*" hidden>
+                            <div id="photoPrompt" class="photo-prompt">
+                                <span class="icon">📷</span>
+                                <p>Cargá, pegá o arrastrá tu foto</p>
+                            </div>
+                            <div id="photoPreview" class="photo-preview preview-hidden">
+                                <img id="previewImg" src="" alt="Vista previa">
+                                <div class="preview-overlay">Cambiar foto</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Column -->
+                    <div class="data-column">
+                        <label class="section-label">Contenido del CV</label>
+                        <div id="dropZone" class="drop-zone">
+                            <input type="file" id="fileInput" multiple hidden>
+                            <span class="icon">📄</span>
+                            <p>Arrastrá PDFs o archivos de texto</p>
+                            <span class="or">o</span>
+                            <button class="btn-secondary">Seleccionar Archivos</button>
+                        </div>
+                        <div id="fileList" class="file-list"></div>
+
+                        <div class="text-area-wrapper">
+                            <textarea id="pastedText"
+                                placeholder="Pegá aquí los mensajes de WhatsApp, el CV viejo o cualquier info del candidato..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-bar">
+                    <button id="processBtn" class="btn-primary">
+                        <span id="btnText">Generar y Enviar CV</span>
+                        <div id="loader" class="loader hidden"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section id="results" class="results-grid" hidden>
+            <div class="glass-card result-card">
+                <h3>¡Todo listo! 🚀</h3>
+                <p id="successMsg"></p>
+                <div class="status-badge" id="emailStatus"></div>
+            </div>
+        </section>
+
+        <!-- HISTORY SECTION -->
+        <section id="history-section" class="main-card glass-card history-container">
+            <h2 class="section-label">Historial de Envíos</h2>
+            <div class="history-table-wrapper">
+                <table id="historyTable">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Candidato</th>
+                            <th>Email</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyBody">
+                        <!-- Entries will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

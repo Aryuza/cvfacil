@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+
+# App related
+web_uploads/
+input_samples/
+history.json
+*.pdf
+parsed_data_debug.json
+processed_*.png
+test_*.py
+check_models.py
+Nueva carpeta/
+
+# OS
+.DS_Store
+Thumbs.db

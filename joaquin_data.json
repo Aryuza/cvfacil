@@ -1,0 +1,84 @@
+{
+    "nombre": "JOAQUÍN LUCIANO GABRIEL AYALA",
+    "telefono": "+54 9 11 3300-4570",
+    "email": "scelzajoa@gmail.com",
+    "ciudad": "Villa Madero, La Matanza, Buenos Aires",
+    "linkedin": "",
+    "perfil": "Estudiante de la carrera de Abogacía en la Universidad de Buenos Aires, con sólida capacidad organizativa y muy buen desempeño en el trabajo en equipo. Persona carismática, responsable y proactiva, con alta capacidad de adaptación y predisposición para cumplir tareas asignadas. Busco incorporarme a puestos en áreas de comercio, atención al cliente o administrativas, aportando compromiso, responsabilidad y buena comunicación.",
+    "experiencia": [
+        {
+            "puesto": "Operario de Logística y Administración",
+            "empresa": "OCASA",
+            "fechas": "Octubre 2024 – Diciembre 2024",
+            "ubicacion": "Buenos Aires",
+            "logros": [
+                "Descarga de camiones y administración eficiente de mercadería.",
+                "Identificación y clasificación de paquetes.",
+                "Comunicación fluida con diferentes clientes.",
+                "Trabajo en equipo y ejecución de múltiples tareas simultáneas."
+            ]
+        },
+        {
+            "puesto": "Atención al Cliente y Caja",
+            "empresa": "Maxikiosco Dreams",
+            "fechas": "Julio 2024 – Noviembre 2024",
+            "ubicacion": "Buenos Aires",
+            "logros": [
+                "Atención al cliente personalizada.",
+                "Gestión y arqueo de caja.",
+                "Control y reposición de stock.",
+                "Colaboración activa con el equipo de trabajo."
+            ]
+        },
+        {
+            "puesto": "Ayudante Administrativo",
+            "empresa": "Inmobiliaria Almafuerte",
+            "fechas": "Febrero 2023 – Mayo 2023",
+            "ubicacion": "Buenos Aires",
+            "logros": [
+                "Ayudante en administración de propiedades.",
+                "Colaboración directa con ejecutivos en el área administrativa.",
+                "Evaluación y diferenciación del estado de las propiedades."
+            ]
+        }
+    ],
+    "educacion": [
+        {
+            "titulo": "Carrera de Abogacía (Ciclo Básico Común)",
+            "institucion": "Universidad de Buenos Aires",
+            "fechas": "En curso",
+            "ubicacion": "Buenos Aires"
+        },
+        {
+            "titulo": "Bachiller en Economía y Administración",
+            "institucion": "Instituto Hermanos Ameziola",
+            "fechas": "2024",
+            "ubicacion": "Buenos Aires"
+        }
+    ],
+    "habilidades": [
+        "Atención al cliente",
+        "Puntualidad",
+        "Adaptabilidad",
+        "Aprendizaje rápido",
+        "Trabajo en equipo",
+        "Resolución de problemas",
+        "Comunicación oral clara",
+        "Capacidad argumentativa",
+        "Responsabilidad y compromiso",
+        "Proactividad"
+    ],
+    "idiomas": [
+        {
+            "idioma": "Español",
+            "nivel": "Nativo"
+        },
+        {
+            "idioma": "Inglés",
+            "nivel": "Básico"
+        }
+    ],
+    "licencias": [
+        "Disponibilidad: Part time (actual) / Full time en vacaciones"
+    ]
+}
