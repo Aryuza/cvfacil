@@ -60,13 +60,12 @@ import mimetypes
 import time
 
 def extract_text_from_pdf(pdf_path: str) -> str:
-    """Extracts all text from a PDF file locally using PyMuPDF."""
+    """Extracts all text from a PDF file locally using pypdf."""
     text = ""
     try:
-        doc = fitz.open(pdf_path)
-        for page in doc:
-            text += page.get_text()
-        doc.close()
+        reader = pypdf.PdfReader(pdf_path)
+        for page in reader.pages:
+            text += page.extract_text() + "\n"
     except Exception as e:
         print(f"Error extracting text from PDF {pdf_path}: {e}")
     return text

@@ -12,23 +12,10 @@ import datetime
 from cv_dividers_only import generate_divider, generate_divider_smaller, generate_divider_larger, generate_divider_tiny, create_circular_image_with_border
 from email_sender import send_cvs_email
 
-# Librería para leer DOCX
-try:
-    import docx
-except ImportError:
-    docx = None
-
+# Función stub para mantener compatibilidad si se llama, pero ya no usamos python-docx por peso
 def extract_text_from_docx(path):
-    if not docx: return ""
-    try:
-        doc = docx.Document(path)
-        fullText = []
-        for para in doc.paragraphs:
-            fullText.append(para.text)
-        return "\n".join(fullText)
-    except Exception as e:
-        print(f"Error reading docx {path}: {e}")
-        return ""
+    print(f"Warning: DOCX extraction disabled for Vercel size limits.")
+    return ""
 
 app = Flask(__name__)
 CORS(app)
