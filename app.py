@@ -26,7 +26,7 @@ if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-HISTORY_FILE = "history.json"
+HISTORY_FILE = os.path.join(UPLOAD_FOLDER, "history.json")
 
 def log_to_history(name, email, status):
     history = []
