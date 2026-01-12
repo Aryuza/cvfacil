@@ -1,8 +1,8 @@
 @echo off
 setlocal
 
-:: Configuración (Mismas credenciales que el bot original)
-set GEMINI_API_KEY=AIzaSyDwfjNQrWfqME13GTioJ0vSHsdX86sv58o
+:: Configuración (Pega aquí tus credenciales)
+set GEMINI_API_KEY=TU_NUEVA_API_KEY_AQUI
 set GMAIL_USER=curriculumfacilentregas@gmail.com
 set GMAIL_APP_PASSWORD=hidv hwqe euln oubd
 

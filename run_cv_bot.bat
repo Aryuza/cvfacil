@@ -1,8 +1,8 @@
 @echo off
 setlocal
 
-:: Configuración (Puedes editar esto una sola vez)
-set GEMINI_API_KEY=AIzaSyDwfjNQrWfqME13GTioJ0vSHsdX86sv58o
+:: Configuración (Edita estas 3 líneas con tus datos)
+set GEMINI_API_KEY=TU_NUEVA_API_KEY_AQUI
 set GMAIL_USER=curriculumfacilentregas@gmail.com
 set GMAIL_APP_PASSWORD=hidv hwqe euln oubd
 
